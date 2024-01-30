@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add confetti-js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <title>Valentine's Cat</title>
+</head>
+<body>
+    <!-- Original content -->
+    <div class="container">
+        <h1>
+            SARA BEČIĆ<br>
+            Will you be my Valentine?
+        </h1>
+        <img id="valentineCat" src="cat.jpg" alt="Valentine's Cat">
+        <div id="dancingCatContainer" class="hidden">
+            <img id="dancingCat" src="dancing-cat.gif" alt="Dancing Cat">
+        </div>
+        <div class="options">
+            <button onclick="handleResponse(true)">Yes</button>
+            <button onclick="handleResponse(false)">No</button>
+        </div>
+        <div id="result" class="hidden"></div>
+    </div>
+
+    <!-- Hypnotizing cat screen -->
+    <div class="hypnotizing-container" style="display: none;">
+        <h1>
+            halooo probi še ENKRAT!!!<br>
+            Will you be my valentine?
+        </h1>
+        <img id="valentineCatHypnotizing" src="cathypnotizing.gif" alt="Hypnotizing Cat">
+        <div class="options">
+            <button onclick="handleResponse(true)">Yes</button>
+        </div>
+        <div id="result" class="hidden"></div>
+    </div>
+
+    <!-- Happy cat screen -->
+    <div class="happy-container" style="display: none;">
+        <h1>
+            SARA BEČIĆ<br>
+            Happy Valentine's Day!
+        </h1>
+        <img id="valentineCatHappy" src="dancing-cat.gif" alt="Happy Cat">
+        <div class="options">
+            <!-- You can add additional options or buttons for the happy cat screen -->
+        </div>
+        <div id="result" class="hidden"></div>
+    </div>
+
+    <div id="confetti-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

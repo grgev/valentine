@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('flower-background.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container,
+.hypnotizing-container,
+.happy-container {
+    text-align: center;
+    color: #ff3366; /* Pink text color */
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.container img,
+.hypnotizing-container img,
+.happy-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-weight: bold; /* Set the font-weight to bold */
+}
+
+.options {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #ff3366; /* Pink background color */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold; /* Set the font-weight to bold */
+}
+
+button:hover {
+    background-color: #ff1a4d; /* Darker pink on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #ff3366;
+    font-weight: bold; /* Set the font-weight to bold */
+}
+
+#dancingCatContainer {
+    display: none;
+}
+
+.hypnotizing-container,
+.happy-container {
+    display: none;
+    position: relative;
+}
+
+.hypnotizing-container h1,
+.hypnotizing-container img,
+.hypnotizing-container .options,
+.happy-container h1,
+.happy-container img,
+.happy-container .options {
+    margin: 0 auto;
+}
+
+#confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}

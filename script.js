@@ -43,7 +43,7 @@ function handleResponse(isYes) {
 
             // Show hypnotizing cat screen
             document.querySelector(".hypnotizing-container").style.display = "block";
-        }, 4000); // 5 seconds delay
+        }, 3200); // 5 seconds delay
     }
 
     resultElement.classList.remove("hidden");
